@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Chels Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="city-search" id="city-search">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="city-search-input"
+            class="city-search-input"
+          />
+          <input type="submit" value="Search" class="city-search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-location" id="city">City</h1>
+            <p class="weather-details">
+              <span id="current-time"></span>,
+              <span id="weather-conditions">moderate rain</span>
+              <br />
+              Humidity: <strong id="humidity">87%</strong>, Wind:
+              <strong id="wind-speed">5 mph</strong>
+            </p>
+          </div>
+          <div class="temperature-container">
+            <span id="icon-image" class="icon-image"></span>
+            <div class="current-temperature" id="current-temperature">80</div>
+            <div class="temperature-unit">°F</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="#" target="_blank">Chelsea Lowance</a> is
+        <a href="#" target="_blank">open-sourced on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
