@@ -96,19 +96,20 @@ main {
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .weather-forecast-icon {
-  text-align: center;
   font-size: 38px;
+  text-align: center;
 }
 
 .weather-forecast-temps {
   text-align: center;
   color: #f65282;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
 }
 
 .weather-forecast-temp {
